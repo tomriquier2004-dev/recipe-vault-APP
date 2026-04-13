@@ -2,5 +2,21 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./backend-e2e"
+    },
+    {
+      "path": "./backend"
+    },
+    {
+      "path": "./frontend-e2e"
+    },
+    {
+      "path": "./frontend"
+    },
+    {
+      "path": "./shared-types"
+    }
+  ]
 }

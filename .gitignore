@@ -46,3 +46,10 @@ Thumbs.db
 .claude/worktrees
 .claude/settings.local.json
 .nx/polygraph
+
+# Next.js
+.next
+out
+
+test-output
+backend/src/firebase-service-account.json
