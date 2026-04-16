@@ -15,11 +15,9 @@ recipe-vault/
 ├── frontend/         # Next.js app (port 3000)
 └── shared-types/     # Shared TypeScript interfaces
 
-The frontend never talks directly to Firestore — all data flows through the NestJS API. This keeps the database logic centralized and the frontend clean.
-
 ## Data Model
 
-Ingredients are embedded directly inside the recipe document rather than stored in a separate collection. Since ingredients have no existence outside of a recipe, this approach minimizes reads and keeps the data model simple.
+Ingredients are embedded directly inside the recipe document rather than stored in a separate collection. Since ingredients have no existence outside of a recipe
 ```json
 {
   "id": "auto-generated",
@@ -50,7 +48,7 @@ Ingredients are embedded directly inside the recipe document rather than stored 
 - Node.js 18+
 - A Firebase project with Firestore enabled
 
-### Firebase Setup
+### Firebase Setup for the database
 
 1. Create a project on [console.firebase.google.com](https://console.firebase.google.com)
 2. Enable Firestore in **test mode**
@@ -62,7 +60,6 @@ Ingredients are embedded directly inside the recipe document rather than stored 
 
 ### Installation
 ```bash
-# Install dependencies
 npm install
 ```
 
