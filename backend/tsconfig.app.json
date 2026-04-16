@@ -5,12 +5,16 @@
     "types": ["node"],
     "rootDir": "src",
     "baseUrl": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "target": "es2021",
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "composite": true,
+    "incremental": true
   },
   "include": ["src/**/*.ts"],
   "exclude": []

@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
 import { RecipesService } from './recipes.service';
-import type { Recipe, CreateRecipeDto, UpdateRecipeDto } from '../types';
+import type {CreateRecipeDto, UpdateRecipeDto } from '../types';
 @Controller('recipes')
 export class RecipesController {
   constructor(private readonly recipesService: RecipesService) {}
